@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pulsa</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+    <link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css"><script src="cordova.js"></script><script src="js/jquery-1.9.min.js"></script>
+  </head>
+  <body>
+<div class="atas"><span id="kiri"><h1>Inti Pulsa</h1></span><span id="kanan"><h2 onclick="buka('daftar.html');">DAFTAR DISINI</h2></span></div>
+<div class="judul"><span onclick="buka('index.html');">Menu Utama</span> | Cek Harga Pulsa</div>
+<div class="container">
+<form name="f1" style="margin:80px 20px 0px 20px;">
+    <div class="form-group">
+      <input type="text" required="" id="myInput" onkeyup="myFunction()" placeholder="Cari produk..">
+      <label for="input" class="control-label"></label><i class="bar"></i>
+    </div>
+</form>
+<ul id="myUL" style="margin:-20px 0 0 0">
+<li onclick="buka('cekharga.html?isi=TKN20');"><span id="kiri">TOKEN 20.000</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TKN50');"><span id="kiri">TOKEN 50.000</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TKN100');"><span id="kiri">TOKEN 100.000</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TKN200');"><span id="kiri">TOKEN 200.000</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TKN500');"><span id="kiri">TOKEN 500.000</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TKN1000');"><span id="kiri">TOKEN 1000.000</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=B25');"><span id="kiri">Bolt 25k</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=B50');"><span id="kiri">Bolt 50k</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=B100');"><span id="kiri">Bolt 100k</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=B150');"><span id="kiri">Bolt 150k</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=B200');"><span id="kiri">Bolt 200k</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SD35');"><span id="kiri">Telkomsel Flash New 1 Gb+2 Gb Video-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SD60');"><span id="kiri">Telkomsel Flash New 3 Gb+2 Gb Video-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SD80');"><span id="kiri">Telkomsel Flash New 8 Gb+2 Gb Video-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SD95');"><span id="kiri">Telkomsel Flash New 12 Gb+2 Gb Video-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SD155');"><span id="kiri">Telkomsel Flash New 25 Gb+2 Gb Video-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SD190');"><span id="kiri">Telkomsel Flash New 35 Gb+2 Gb Video-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SC60');"><span id="kiri">Telkomsel Combo 2 Gb+2 Gb Video+60 Mt-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SC95');"><span id="kiri">Telkomsel Combo 10 Gb+ 2 Gb Video+ 100 Mt-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SC155');"><span id="kiri">Telkomsel Combo 23 Gb+ 2 Gb Video+ 200 Mt-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDG3');"><span id="kiri">Telkomsel 0,5Gb All+ 1,5 Gb 4G+ 1 Gb Game- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDR6');"><span id="kiri">Telkomsel Combo 6Gb</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDR8');"><span id="kiri">Telkomsel Combo 8Gb</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDR11');"><span id="kiri">Telkomsel Combo 11Gb</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDR17');"><span id="kiri">Telkomsel Combo 17Gb</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDP5');"><span id="kiri">Telkomsel Flash 35 Mb-7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDP10');"><span id="kiri">Telkomsel Flash 80 Mb-7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDP20');"><span id="kiri">Telkomsel Flash 340 Mb-7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDP25');"><span id="kiri">Telkomsel Flash 500 Mb+1Gb Video-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDP50');"><span id="kiri">Telkomsel Flash 1,2 Gb+1 Gb+3 Gb Video-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDP100');"><span id="kiri">Telkomsel Flash 3,5 Gb+5 GbVideo+2Gb 4G-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDS1');"><span id="kiri">Telkomsel Flash New 30 Mb-1h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDS2');"><span id="kiri">Telkomsel Flash New 60 Mb-1h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDS3');"><span id="kiri">Telkomsel Flash New 100 Mb-1h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDS4');"><span id="kiri">Telkomsel Flash New 150 Mb-1h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDS5');"><span id="kiri">Telkomsel Flash New 200 Mb-1h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDS10');"><span id="kiri">Telkomsel Flash New 1 Gb-1h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDT1');"><span id="kiri">Telkomsel Flash New 1 Gb-3h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDT2');"><span id="kiri">Telkomsel Flash New 2 Gb-3h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDT5');"><span id="kiri">Telkomsel Flash New 5 Gb-3h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDT10');"><span id="kiri">Telkomsel Flash New 10 Gb-3h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDM1');"><span id="kiri">Telkomsel Flash New 1 Gb All- 7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDM2');"><span id="kiri">Telkomsel Flash New 2 Gb All- 7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDM3');"><span id="kiri">Telkomsel Flash New 3 Gb All- 7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDM5');"><span id="kiri">Telkomsel Flash New 5 Gb All- 7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDM10');"><span id="kiri">Telkomsel Flash New 10 Gb All- 7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDMP1K5');"><span id="kiri">Telkomsel Flash New 1,5Gb-14h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SDMP2');"><span id="kiri">Telkomsel Flash New 2Gb-14h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SF5');"><span id="kiri">Telkomsel Telfon 20 Mt All Opr- 1Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SF10');"><span id="kiri">Telkomsel Telfon 50 Mt All Opr- 3Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SF20');"><span id="kiri">Telkomsel Telfon 50 Mt All Opr- 7Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SF25');"><span id="kiri">Telkomsel Telfon 50 Mt + 200 sms All Opr- 7Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SF50');"><span id="kiri">Telkomsel Telfon 100 Mt All Opr- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=SF100');"><span id="kiri">Telkomsel Telfon 300 Mt + 1000 Sms All Opr- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XH120M');"><span id="kiri">XL HotRod 120 Mb All- 7H  </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XH800M');"><span id="kiri">XL HotRod 800 Mb All -30h  </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XH1K5');"><span id="kiri">XL HotRod 1,5 GbAll -30h  </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XH3');"><span id="kiri">XL HotRod 3 Gb All -30h    </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XH6');"><span id="kiri">XL HotRod 6 Gb All -30h    </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XH8');"><span id="kiri">XL HotRod 8 Gb All -30h    </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XH12');"><span id="kiri">XL HotRod 12 Gb All -30h    </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XH16');"><span id="kiri">XL HotRod 16 Gb All -30h    </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XC5');"><span id="kiri">XL Xtra Combo 5 Gb All+ 5 Gb Youtube+ 20Mt- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XC10');"><span id="kiri">XL Xtra Combo 10 Gb All+ 10 Gb Youtube+ 40Mt- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XC15');"><span id="kiri">XL Xtra Combo 15 Gb All+ 15 Gb Youtube+ 60Mt- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XC20');"><span id="kiri">XL Xtra Combo 20 Gb All+ 20 Gb Youtube+ 100Mt- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XC35');"><span id="kiri">XL Xtra Combo 35 Gb All+ 35 Gb Youtube+ 140Mt- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XUC10');"><span id="kiri">XL Umrah&H Unlimited Data+ 50 Sms+ 50 mt-10h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XUC20');"><span id="kiri">XL Umrah&H Unlimited Data+ 75 Sms+ 75 mt-20h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XUC40');"><span id="kiri">XL Umrah&H Unlimited Data+ 100 Sms+ 100 mt-40h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XUFS10');"><span id="kiri">XL Umrah&Haji 50 Sms+ 50 mt-10h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XUFS20');"><span id="kiri">XL Umrah&Haji 75 Sms+ 75 mt-20h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XUFS40');"><span id="kiri">XL Umrah&Haji 100 Sms+ 100 mt-40h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XUD10');"><span id="kiri">XL Umrah&Haji Unlimited Data-10h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XUD20');"><span id="kiri">XL Umrah&Haji Unlimited Data-20h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XUD40');"><span id="kiri">XL Umrah&Haji Unlimited Data-40h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XF200');"><span id="kiri">XL Telfon 200 Mt Sesama XL- 14h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XF500');"><span id="kiri">XL Telfon 500 Mt Sesama XL- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XFS200');"><span id="kiri">XL Telfon 200 Mt+400 Sms Sesama XL- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XFA50');"><span id="kiri">XL Telfon 350 Mt Sesama XL+ 50 Mt All-7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XFA250');"><span id="kiri">XL Telfon 250 Mt All Operator- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IY7');"><span id="kiri">Indosat Yellow 1 Gb All- 7hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IY15');"><span id="kiri">Indosat Yellow 1 Gb All- 15hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=ID1');"><span id="kiri">Indosat Unlimited 1 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=ID2');"><span id="kiri">Indosat Unlimited 2 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=ID3');"><span id="kiri">Indosat Unlimited 3 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=ID7');"><span id="kiri">Indosat Unlimited 7 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=ID10');"><span id="kiri">Indosat Unlimited 10 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=ID15');"><span id="kiri">Indosat Unlimited 15 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IDUL');"><span id="kiri">Indosat Unlimited Jumbo- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IDM1');"><span id="kiri">Indosat Mini 1 Gb+ 0,5 Gb App+ 1 Gb mlm-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IDM2');"><span id="kiri">Indosat Mini 2 Gb+ 0,5 Gb App+ 3,5 Gb mlm-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IDP4');"><span id="kiri">Indosat Plus 4 Gb+ 4 Gb App+ 20 Gb mlm-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=ICM');"><span id="kiri">Indosat Freedom Combo M 12 Gb- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=ICL');"><span id="kiri">Indosat Freedom Combo L 26 Gb- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IX2');"><span id="kiri">Indosat Xtra 2 Gb Non masa Aktif</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IX4');"><span id="kiri">Indosat Xtra 4 Gb Non masa Aktif</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IX6');"><span id="kiri">Indosat Xtra 6 Gb Non masa Aktif</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IS5');"><span id="kiri">Indosat Paket sms 5k</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IS10');"><span id="kiri">Indosat Paket sms 10k</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=IS25');"><span id="kiri">Indosat Paket sms 25k</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=REGISAT');"><span id="kiri">Indosat Buka Jaringan Perdana Indosat</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BR300');"><span id="kiri">Axis Bronet 300 Mb All- 7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BR1G');"><span id="kiri">Axis Bronet 1 Gb All- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BR2G');"><span id="kiri">Axis Bronet 2 Gb All- 60h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BR3G');"><span id="kiri">Axis Bronet 3 Gb All- 60h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BR5G');"><span id="kiri">Axis Bronet 5 Gb All- 60h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BR8G');"><span id="kiri">Axis Bronet 8 Gb All- 60h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BRO2');"><span id="kiri">Axis Owsem 1 Gb+ 1 Gb 4G-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BRO4');"><span id="kiri">Axis Owsem 1 Gb+ 3 Gb 4G-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BRO8');"><span id="kiri">Axis Owsem 2 Gb+ 6 Gb 4G-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BRO12');"><span id="kiri">Axis Owsem 3 Gb+ 9 Gb 4G-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=AG7H');"><span id="kiri">Axis Unlimited FUP 200 Mb- 7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=AG30H');"><span id="kiri">Axis Unlimited FUP 1,5 Gb- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=KZLC');"><span id="kiri">Axis KZL Chating</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=KZLS');"><span id="kiri">Axis KZL Sosmed</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=KZLCS');"><span id="kiri">Axis KZL Chating + Sosmed</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=KZLM');"><span id="kiri">Axis KZL Musik Yonder</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TD3');"><span id="kiri">Three Kuota ++ 20 Mb All</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TD6');"><span id="kiri">Three Kuota ++ 80 Mb All</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TD11');"><span id="kiri">Three Kuota ++ 300 Mb All</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TDN1');"><span id="kiri">Three Data Plus 1 Gb+ 1 Gb 4G- +90h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TDN2');"><span id="kiri">Three Data Plus 2 Gb+ 4 Gb 4G- +90h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TDN3');"><span id="kiri">Three Data Plus 3 Gb+ 6 Gb 4G+ 21 Gb Kendo- +90h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TDN4');"><span id="kiri">Three Data Plus 4 Gb+ 8 Gb 4G+ 10 Gb Kendo- +90h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TDN5');"><span id="kiri">Three Data Plus 5 Gb+ 10 Gb 4G+ 10 Gb Kendo- +90h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TDN6');"><span id="kiri">Three Data Plus 6 Gb+ 12 Gb 4G+ 20 Gb Kendo- +90h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TDN8');"><span id="kiri">Three Data Plus 8 Gb+ 16 Gb 4G+ 20 Gb Kendo- +90h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TDN10');"><span id="kiri">Three Data Plus 10 Gb+ 20 Gb 4G+ 20 Gb Kendo- +90h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TBM1');"><span id="kiri">Three BM 0,5 Gb+ 0,5 Gb  Lokal+ 0,5 Kendo- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TBM3');"><span id="kiri">Three BM 1 Gb+ 1,5 Gb Lokal+ 0,5 Kendo- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TGM2');"><span id="kiri">Three GM 2 Gb+ 1 Gb Lokal+ 3 Movie- 60h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TGM3');"><span id="kiri">Three GM 3 Gb+ 1 Gb Lokal+ 5 Movie- 60h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TGM5');"><span id="kiri">Three GM 5 Gb+ 3 Gb Lokal+ 7 Movie- 60h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TC6');"><span id="kiri">Three Cinta6- 50Gb Dibagi2- 90h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TC10');"><span id="kiri">Three Cinta10- 70Gb Dibagi2- 90h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TNM5G');"><span id="kiri">Three NetMax 0,5Gb+ 5Gb Kendo- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=TNM7G');"><span id="kiri">Three NetMax 2Gb+ 7Gb Kendo- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=YD10');"><span id="kiri">Smartfren VolBased 1,25Gb+ 1,75Gb mlm- 7h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=YD20');"><span id="kiri">Smartfren VolBased 2Gb+ 2Gb mlm- 14h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=YD30');"><span id="kiri">Smartfren VolBased 4Gb+ 4Gb mlm- 14h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=YD60');"><span id="kiri">Smartfren VolBased 8Gb+ 8Gb mlm- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=YD100');"><span id="kiri">Smartfren VolBased 15Gb+ 15Gb mlm- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=YD150');"><span id="kiri">Smartfren VolBased 22Gb+ 22Gb mlm- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=YD200');"><span id="kiri">Smartfren VolBased 30Gb+ 30Gb mlm- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=YUL1');"><span id="kiri">Smartfren Unlimited FUP 1Gb X 1Hr 24Jam</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=YUL7');"><span id="kiri">Smartfren Unlimited FUP 1Gb X 7Hr 24Jam</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=YUL30');"><span id="kiri">Smartfren Unlimited FUP 1Gb X 30Hr 24Jam</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BD30');"><span id="kiri">Bolt 1,5 Gb  </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BD50');"><span id="kiri">Bolt 3 Gb  </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BD100');"><span id="kiri">Bolt 8 Gb  </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BD150');"><span id="kiri">Bolt 13 Gb  </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BD200');"><span id="kiri">Bolt 17 Gb  </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BC65');"><span id="kiri">Bolt Combo 3 Gb </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BC119');"><span id="kiri">Bolt Combo 6 Gb </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BC169');"><span id="kiri">Bolt Combo 9 Gb </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BC219');"><span id="kiri">Bolt Combo 14 Gb </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=BC299');"><span id="kiri">Bolt Combo 20 Gb </span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VBM1');"><span id="kiri">Three Voucher BM1</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VBM3');"><span id="kiri">Three Voucher BM3</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VGM2');"><span id="kiri">Three Voucher GetMore 2</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VGM3');"><span id="kiri">Three Voucher GetMore 3</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VGM5');"><span id="kiri">Three Voucher GetMore 5</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VTC6');"><span id="kiri">Three Voucher Cinta 6</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VTC10');"><span id="kiri">Three Voucher Cinta 10</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VTD1');"><span id="kiri">Three Voucher Data Plus 1</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VTD2');"><span id="kiri">Three Voucher Data Plus 2</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VTD3');"><span id="kiri">Three Voucher Data Plus 3</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VTD4');"><span id="kiri">Three Voucher Data Plus 4</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VTD5');"><span id="kiri">Three Voucher Data Plus 5</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VTD6');"><span id="kiri">Three Voucher Data Plus 6</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VTD8');"><span id="kiri">Three Voucher Data Plus 8</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VTD10');"><span id="kiri">Three Voucher Data Plus 10</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VIY7');"><span id="kiri">Indosat Yellow 1 Gb All- 7hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VIY15');"><span id="kiri">Indosat Yellow 1 Gb All- 15hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VID1');"><span id="kiri">Indosat Unlimited 1 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VID2');"><span id="kiri">Indosat Unlimited 2 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VID3');"><span id="kiri">Indosat Unlimited 3 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VID7');"><span id="kiri">Indosat Unlimited 7 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VID10');"><span id="kiri">Indosat Unlimited 10 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VID15');"><span id="kiri">Indosat Unlimited 15 Gb- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VIDUL');"><span id="kiri">Indosat Unlimited Jumbo- 30Hr</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VIDM1');"><span id="kiri">Indosat Data Mini 1- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VIDM2');"><span id="kiri">Indosat Data Mini 2-30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VIDP4');"><span id="kiri">Indosat Data Plus 4 -30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VICM');"><span id="kiri">Indosat Freedom Combo M- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VICL');"><span id="kiri">Indosat Freedom Combo L- 30h</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VSD1');"><span id="kiri">Telkomsel Voucher Data 1</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VSD3');"><span id="kiri">Telkomsel Voucher Data 3</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=VSD8');"><span id="kiri">Telkomsel Voucher Data 8</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=PBM1');"><span id="kiri">Three Perdana BM1</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=PBM3');"><span id="kiri">Three Perdana BM3</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=PGM2');"><span id="kiri">Three Perdana GetMore 2</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=PGM4');"><span id="kiri">Three Perdana GetMore 4</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=PGM5');"><span id="kiri">Three Perdana GetMore 5</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=PC6');"><span id="kiri">Three Perdana Cinta 6</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=PC10');"><span id="kiri">Three Perdana Cinta 10</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=AON1');"><span id="kiri">Three Perdana AON 1</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=AON2');"><span id="kiri">Three Perdana AON 2</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=AON3');"><span id="kiri">Three Perdana AON 3</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=AON4');"><span id="kiri">Three Perdana AON 4</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=AON5');"><span id="kiri">Three Perdana AON 5</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=AON6');"><span id="kiri">Three Perdana AON 6</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=AON8');"><span id="kiri">Three Perdana AON 8</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=AON10');"><span id="kiri">Three Perdana AON 10</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XD1');"><span id="kiri">XL Perdana HotRod 1Gb</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XD2');"><span id="kiri">XL Perdana HotRod 2Gb</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XD3');"><span id="kiri">XL Perdana HotRod 3Gb</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XD10');"><span id="kiri">XL Perdana HotRod 10Gb</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=XD17');"><span id="kiri">XL Perdana HotRod 17Gb</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=REGXL');"><span id="kiri">XL Buka Jaringan Perdana XL</span><span id="kanan"><img src="img/panah.png"/></span></li>
+<li onclick="buka('cekharga.html?isi=PYD60');"><span id="kiri">Smartfren Perdana Smartfren 19Gb</span><span id="kanan"><img src="img/panah.png"/></span></li>
+
+</ul>
+</div>
+<script>
+function myFunction() {
+    var input, filter, ul, li, span, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        span = li[i].getElementsByTagName("span")[0];
+        if (span.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+        <script src="js/index.js"></script>
+  </body>
+</html>
