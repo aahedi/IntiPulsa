@@ -7,7 +7,7 @@
 function jmla(){
 var a1 = document.getElementById('kd').value
 var a2 = document.getElementById('pin').value
-var a3 = a1+'.'+a2
+var a3 = 'H.'+a1+'.'+a2
 //a3.split(' ').join('');
 document.getElementById('pesan').value = a3;
 }

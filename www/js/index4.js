@@ -7,8 +7,8 @@
 function jmla(){
 var a1 = document.getElementById('kd').value
 var a2 = document.getElementById('no_hp').value
-var a3 = document.getElementById('idpel').value
-var a4 = 'Tiket.'+a2+'.'+a3
+var a3 = document.getElementById('pin').value
+var a4 = 'TIKET.'+a2+'.'+a3
 //a4.split(' ').join('');
 document.getElementById('pesan').value = a4;
 }
@@ -44,12 +44,8 @@ document.getElementById('pesan').value = a4;
 			
 var a1 = document.getElementById('kd').value
 var a2 = document.getElementById('no_hp').value
-var a3 = document.getElementById('idpel').value
-    if (a1 == null || a1 == "") {
-        alert("Semua harus diisi");
-        return false;
-    }
-    else if (a2 == null || a2 == "") {
+var a3 = document.getElementById('pin').value
+    if (a2 == null || a2 == "") {
         alert("Semua harus diisi");
         return false;
     }

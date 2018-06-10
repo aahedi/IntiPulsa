@@ -27,9 +27,10 @@ var f = document.getElementById('kd');
 		value = pair[1];
 		if (name == "isi")
 		{
-			document.getElementById('kd').value = "H."+value;
+			document.getElementById('kd').value = value;
 		}
 	}
+document.getElementById('pin').focus();
 }
 </script>
   </head>
@@ -44,8 +45,8 @@ var f = document.getElementById('kd');
       </select>
       <label for="select" class="control-label" id="sc" onChange="jmla()">Center</label><i class="bar"></i>
     </div>
-    <div class="form-group" hidden>
-      <input type="text" required id="kd" name="isi"/>
+    <div class="form-group">
+      <input type="text" required id="kd" oninput="jmla()" onkeyup="jmla()" name="isi"/>
       <label for="input" class="control-label">Kode</label><i class="bar"></i>
     </div>
     <div class="form-group" hidden>
@@ -57,7 +58,7 @@ var f = document.getElementById('kd');
       <label for="input" class="control-label">Masukkan PIN</label><i class="bar"></i>
     </div>
     <div class="form-group" hidden>
-      <input type="text" required id="pesan" value="saldo"/>
+      <input type="text" required id="pesan"/>
       <label for="input" class="control-label">Pesan</label><i class="bar"></i>
     </div>
 	

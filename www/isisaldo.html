@@ -38,9 +38,7 @@ var f = document.getElementById('kd');
 <div class="judul"><span onclick="buka('index.html');">Menu Utama</span> | Top Up Via Tiket</div>
 <div class="container">
 <form name="f1" style="margin:80px 20px 0px 20px;">
-<div class="form-group"><select id="sc">
-    <!--<option value="082240403020">082240403020</option>-->
-    <option value="081210161992">081210161992</option><option value="081288961994">081288961994</option><option value="081283820200">081283820200</option>
+<div class="form-group"><select id="sc"><option value="081283820200">081283820200 (WA)</option><option value="087781920200">087781920200 (WA)</option>
       </select>
       <label for="select" class="control-label" id="sc" onChange="jmla()">Center</label><i class="bar"></i>
     </div>
@@ -53,8 +51,8 @@ var f = document.getElementById('kd');
       <label for="input" class="control-label">Masukkan Nominal Saldo</label><i class="bar"></i>
     </div>
     <div class="form-group">
-      <input type="text" required id="idpel" onkeyup="jmla()" onkeydown="this.value=removeSpaces(this.value)" maxlength="12"/>
-      <label for="input" class="control-label">Masukkan Nomor ID</label><i class="bar"></i>
+      <input type="text" required id="pin" onkeyup="jmla()" onkeydown="this.value=removeSpaces(this.value)" maxlength="12"/>
+      <label for="input" class="control-label">Masukkan Pin</label><i class="bar"></i>
     </div>
     <div class="form-group" hidden>
       <input type="text" required id="pesan"/>
