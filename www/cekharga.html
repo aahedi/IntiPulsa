@@ -30,7 +30,6 @@ var f = document.getElementById('kd');
 			document.getElementById('kd').value = value;
 		}
 	}
-document.getElementById('pin').focus();
 }
 </script>
   </head>
@@ -48,6 +47,7 @@ document.getElementById('pin').focus();
     <div class="form-group">
       <input type="text" required id="kd" oninput="jmla()" onkeyup="jmla()" name="isi"/>
       <label for="input" class="control-label">Kode</label><i class="bar"></i>
+	  <span style="color:#999;font-size:10px;margin-left:2px;">bisa diganti / ditambah<span>
     </div>
     <div class="form-group" hidden>
       <input type="number" required id="no_hp" oninput="jmla()" onkeyup="jmla()" onkeydown="this.value=removeSpaces(this.value)" onkeypress="return isNumberKey(event)" maxlength="8" class="hide"/>
